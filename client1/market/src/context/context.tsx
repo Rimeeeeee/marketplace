@@ -20,7 +20,7 @@ interface MarketplaceContextProps {
 const MarketplaceContext = createContext<MarketplaceContextProps | undefined>(undefined);
 
 const client: ThirdwebClient = createThirdwebClient({
-  clientId: import.meta.env.VITE_CLIENT_ID as string,
+  clientId:"0b82230109766dbe6a86f49be9a89351",
 });
 
 interface MarketplaceContextProviderProps {
@@ -33,7 +33,7 @@ export const MarketplaceContextProvider = ({
   const contract = getContract({
     client,
     chain: defineChain(11155111),
-    address: import.meta.env.VITE_CONTRACT_ADDRESS as string,
+    address:"0x273bedc1a6241f8E7D78833FeEB4047F469d2c25",
   });
 
   // const connect =;
